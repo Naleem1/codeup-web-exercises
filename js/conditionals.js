@@ -59,33 +59,33 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-const analyzeColor = () => {
-    switch(colorPreference){
-        case "red":
-            alert('strawberries are red.');
-            break;
-        case "orange":
-            alert('basketballs are orange.');
-            break;
-        case "yellow":
-            alert('My motorcycle was yellow.');
-            break;
-        case "green":
-            alert('The grass is green.');
-            break;
-        case "blue":
-            alert('The sky is blue.');
-            break;
-        case "indigo":
-            alert('grape are indigo.');
-            break;
-        case "violet":
-            alert('Lavender is violet.');
-            break;
-        default:
-            alert(`I do not know this color: ${colorPreference}`)
-    }
-}
+// const analyzeColor = (color) => {
+//     switch(color){
+//         case "red":
+//             return 'strawberries are red.';
+//             break;
+//         case "orange":
+//             return 'basketballs are orange.';
+//             break;
+//         case "yellow":
+//             return 'My motorcycle was yellow.';
+//             break;
+//         case "green":
+//             return 'The grass is green.';
+//             break;
+//         case "blue":
+//             return 'The sky is blue.';
+//             break;
+//         case "indigo":
+//             return 'grape are indigo.';
+//             break;
+//         case "violet":
+//             return 'Lavender is violet.';
+//             break;
+//         default:
+//             return`I do not know this color: ${color}`;
+//     }
+// }
 
 /**
  * TODO:
@@ -93,11 +93,11 @@ const analyzeColor = () => {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-let colorPreference = prompt('what is your favorite color?')
-/* ########################################################################## */
-analyzeColor(colorPreference)
-let colorPick = analyzeColor(colorPreference)
-alert(colorPick)
+// let colorPreference = prompt('what is your favorite color?')
+// /* ########################################################################## */
+// let colorPick = analyzeColor(colorPreference)
+// alert(colorPick)
+
 /**
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
@@ -117,7 +117,22 @@ alert(colorPick)
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+const calculateTotal = (discount,totalPrice) => {
+    let numbers = [0,1,2,3,4,5];
+    let discount1 = numbers[0] = 0;
+    let discount2 = numbers[1] = 10;
+    let discount3 = numbers[2] = 25;
+    let discount4 = numbers[3] = 35;
+    let discount5 = numbers[4] = 45;
+    let discount6 = numbers[5] = 100;
+    let luckyNumber = numbers[Math.floor(Math.random() * numbers.length)];
+    let randomRoll = console.log(luckyNumber);
+    let discountAmount = randomRoll - totalPrice
 
+
+
+}
+calculateTotal()
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.

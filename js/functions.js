@@ -70,10 +70,10 @@ console.log(isTwo(random))
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-const calculateTip = (tip ,bill) => {
+const calculateTip = (tip,bill) => {
     let fullTip = parseFloat(tip);
     let fullBill = parseFloat(bill);
-    return (fullTip / fullBill) * 100;
+    return (fullTip / 100) * fullBill;
 }
 let tTip = calculateTip(0.25,25.50)
 console.log(tTip)
@@ -103,4 +103,6 @@ alert(total)
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-const applyDiscount = ()
+const applyDiscount = (price) => {
+
+}
