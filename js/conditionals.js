@@ -21,25 +21,67 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-
+// const analyzeColor = (color) => {
+//    if(color === 'red'){
+//        alert('strawberries are red')
+//    }if(color === 'orange'){
+//        alert('oranges are orange')
+//     }if(color === 'yellow'){
+//        alert('lemons are yellow')
+//     }if(color === 'green'){
+//        alert('grass is green')
+//     }if(color === 'blue'){
+//        alert('the sky is blue')
+//     }if(color === 'indigo'){
+//        alert('sometimes the sky is indigo')
+//     }if(color === 'violet'){
+//        alert('flowers can be violet')
+//     }else if(color !== colors){
+//        alert('i do not know this color')
+//     }
+// }
+// console.log(analyzeColor('yellow'))
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+let randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-
+// let test = console.log(analyzeColor(randomColor))
+// console.log(test)
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-
+let colorPreference = prompt('what is your favorite color?')
+const analyzeColor = () => {
+    switch(colorPreference){
+        case "red":
+            alert('strawberries are red.');
+        case "orange":
+            alert('basketballs are orange.');
+        case "yellow":
+            alert('My motorcycle was yellow.');
+        case "green":
+            alert('The grass is green.');
+        case "blue":
+            alert('The sky is blue.');
+        case "indigo":
+            alert('grape are indigo.');
+        case "violet":
+            alert('Lavender is violet.');
+            break;
+        default:
+            alert(`I do not know this ${colorPreference}`)
+    }
+}
+analyzeColor('blue')
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
