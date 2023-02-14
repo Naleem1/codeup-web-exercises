@@ -59,38 +59,45 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-let colorPreference = prompt('what is your favorite color?')
 const analyzeColor = () => {
     switch(colorPreference){
         case "red":
             alert('strawberries are red.');
+            break;
         case "orange":
             alert('basketballs are orange.');
+            break;
         case "yellow":
             alert('My motorcycle was yellow.');
+            break;
         case "green":
             alert('The grass is green.');
+            break;
         case "blue":
             alert('The sky is blue.');
+            break;
         case "indigo":
             alert('grape are indigo.');
+            break;
         case "violet":
             alert('Lavender is violet.');
             break;
         default:
-            alert(`I do not know this ${colorPreference}`)
+            alert(`I do not know this color: ${colorPreference}`)
     }
 }
-analyzeColor('blue')
+
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-
+let colorPreference = prompt('what is your favorite color?')
 /* ########################################################################## */
-
+analyzeColor(colorPreference)
+let colorPick = analyzeColor(colorPreference)
+alert(colorPick)
 /**
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
