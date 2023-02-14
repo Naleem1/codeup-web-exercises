@@ -8,6 +8,9 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
+const sayHello = (name) => {
+    return `Hello, ${name}`;
+}
 
 /**
  * TODO:
@@ -16,17 +19,22 @@
  *
  * console.log 'helloMessage' to check your work
  */
-
+sayHello('Najee')
+let helloMessage = sayHello('Najee');
+console.log(helloMessage)
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
-
+let myName = 'Najee';
+sayHello(myName)
+let helloNaj = sayHello(myName)
+console.log(helloNaj)
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
+let random = Math.floor((Math.random() * 3) + 1);
 
 /**
  * TODO:
@@ -45,6 +53,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+const isTwo = (num) => {
+    let results = num === 2;
+    return results
+}
+console.log(isTwo(random))
 
 /**
  * TODO:
@@ -57,13 +70,23 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-
+const calculateTip = (tip ,bill) => {
+    let fullTip = parseFloat(tip);
+    let fullBill = parseFloat(bill);
+    return (fullTip / fullBill) * 100;
+}
+let tTip = calculateTip(0.25,25.50)
+console.log(tTip)
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+let askPatronBill = parseFloat(prompt(`How much was your bill?`));
+let askPatronTip = parseFloat(prompt(`How much would you like to tip?`));
+let total = calculateTip(askPatronTip,askPatronBill);
+alert(total)
 
 /**
  * TODO:
@@ -79,3 +102,5 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+const applyDiscount = ()
