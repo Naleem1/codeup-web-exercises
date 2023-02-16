@@ -1,0 +1,7 @@
+"use strict";
+
+let i = 0;
+while(i <= 16){
+    console.log(Math.pow(2,i))
+    i++
+}

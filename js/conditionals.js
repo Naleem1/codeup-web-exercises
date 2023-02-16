@@ -53,8 +53,8 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-// let test = console.log(analyzeColor(randomColor))
-// console.log(test)
+// let message = console.log(analyzeColor(randomColor))
+// console.log(message)
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
@@ -63,25 +63,18 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
 //     switch(color){
 //         case "red":
 //             return 'strawberries are red.';
-//             break;
 //         case "orange":
 //             return 'basketballs are orange.';
-//             break;
 //         case "yellow":
 //             return 'My motorcycle was yellow.';
-//             break;
 //         case "green":
 //             return 'The grass is green.';
-//             break;
 //         case "blue":
 //             return 'The sky is blue.';
-//             break;
 //         case "indigo":
 //             return 'grape are indigo.';
-//             break;
 //         case "violet":
 //             return 'Lavender is violet.';
-//             break;
 //         default:
 //             return`I do not know this color: ${color}`;
 //     }
@@ -117,22 +110,22 @@ let randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-const calculateTotal = (discount,totalPrice) => {
-    let numbers = [0,1,2,3,4,5];
-    let discount1 = numbers[0] = 0;
-    let discount2 = numbers[1] = 10;
-    let discount3 = numbers[2] = 25;
-    let discount4 = numbers[3] = 35;
-    let discount5 = numbers[4] = 45;
-    let discount6 = numbers[5] = 100;
-    let luckyNumber = numbers[Math.floor(Math.random() * numbers.length)];
-    let randomRoll = console.log(luckyNumber);
-    let discountAmount = randomRoll - totalPrice
-
-
-
-}
-calculateTotal()
+// const calculateTotal = (luckyNumber, totalAmount) => {
+//     if(luckyNumber === 0) {
+//         return totalAmount
+//     }else if(luckyNumber === 1) {
+//         return totalAmount * .9
+//     }else if(luckyNumber === 2){
+//         return totalAmount * .75
+//     }else if(luckyNumber === 3) {
+//         return totalAmount * .65
+//     }else if(luckyNumber === 4) {
+//         return totalAmount * .5
+//     }else if(luckyNumber === 5) {
+//         return 0
+//     }
+// }
+//
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -142,7 +135,10 @@ calculateTotal()
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+const luckyNumber = Math.floor(Math.random() * 6);
+const totalBill = prompt(`How much was your total bill?`);
+
+
 
 /**
  * TODO:
@@ -162,3 +158,8 @@ calculateTotal()
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+const wantsToEnterNumber = confirm(`Would you like to enter a number?`);
+if(wantsToEnterNumber){
+    prompt('What number would you like to enter?')
+}
