@@ -1,4 +1,4 @@
-(function(){
+(function() {
     "use strict";
 
     /**
@@ -6,13 +6,13 @@
      * Create an array of 4 people's names and store it in a variable called
      * 'names'.
      */
-    let names = ['Najee','Zacc','Reggie', 'Robert']
+    // let names = ['Najee', 'Zacc', 'Reggie', 'Robert']
     /**
      * TODO:
      * Create a log statement that will log the number of elements in the names
      * array.
      */
-     // console.log(names.length)
+    // console.log(names.length)
     /**
      * TODO:
      * Create log statements that will print each of the names individually by
@@ -35,9 +35,9 @@
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-    names.forEach((name, i, array) => {
-        console.log(name)
-    });
+    // names.forEach((name, i, array) => {
+    //     console.log(name)
+    // });
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
@@ -52,4 +52,18 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
+    // const removeFirst = (array) => {
+    //     return array[0];
+    // }
+    // console.log(removeFirst([1, 2, 3, 4, 5]));
+    //
+    // const removeSecond = (array) => {
+    //     return array[1]
+    // }
+    // console.log(removeSecond([1,2,3,4,5]))
+    //
+    // const removeLast = (array) => {
+    //     return array[4]
+    // }
+    // console.log(removeLast([1,2,3,4,5]))
 })();
