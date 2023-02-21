@@ -31,3 +31,43 @@ const hourlyWeather = [
 ];
 
 hourlyWeather.forEach(hourlyForecast => console.log(hourlyWeather.temperature));
+
+
+const fighter = {
+    name: "Najee",
+    hitPoints: 18,
+    maxDamage: 8,
+    attack: function(enemy) {
+        console.log(`${enemy.name} has ${enemy.hitPoints}`)
+        console.log(this.name + "attacks!");
+        const damage = Math.ceil(Math.random() * this.maxDamage);
+            console.log(`${this.name} does ${damage} points of damage`)
+        enemy.hitPoints -= damage;
+            console.log(`${enemy.name} has ${enemy.hitPoints} left`)
+    }
+}
+
+const fighter2 = {
+    name: "Bigfoot",
+    hitPoints: 17,
+    maxDamage: 10,
+    attack: function() {
+        console.log(this.name + "attacks")
+    }
+}
+
+const monster = {
+    name: "Goblin",
+    hitPoints: 8,
+    maxDamage: 6
+}
+
+const gameLogic = {
+    attack: function(attacker, defender) {
+        console.log(`${defender.name} has ${defender.hitpoint} hit points.`)
+        console.log(`${attacker.name} attacks!`)
+        const damage = Math.ceil(Math.random() * attacker.maxDamage)
+        defender.hitpoint -= damage
+        console.log(`${defender.name} now has ${defender.hitpoint} hit points left! `)
+    }
+}
