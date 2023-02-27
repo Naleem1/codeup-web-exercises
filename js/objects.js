@@ -28,9 +28,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    person.sayHello = `Hello from ${person.firstName} ${person.lastName}`
-    // console.log(person.sayHello)
-
+    person.sayHello = function() {
+        return `Hello from ${person.firstName} ${person.lastName}`
+    };
+    // console.log(person.sayHello())
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -54,7 +55,7 @@
     shoppers.forEach((shopper) => {
         // console.log(shopper)
 
-        if(shopper.amount > 200) {
+        if(shopper.amount >= 200) {
             let original = shopper.amount
             let discountPrice = shopper.amount = shopper.amount - shopper.amount * .12;
             let discount = shopper.amount * .12
@@ -128,20 +129,20 @@
      *   `showBookInfo` function.
      */
 
-    function Book(title, authorName){
-        this.title = title;
-        let nameArray = authorName.split(" ")
-
-        this.author = {
-            firstName: nameArray[0],
-            lastName: nameArray[1]
-        };
-
-        this.showBookInfo = (index) => {
-            console.log(`Book # ${index} \nTitle: ${this.title}\nAuthor: ${this.author.firstName} ${this.author.lastName}\n---
-            `)
-        }
-    }
+    // function Book(title, authorName){
+    //     this.title = title;
+    //     let nameArray = authorName.split(" ")
+    //
+    //     this.author = {
+    //         firstName: nameArray[0],
+    //         lastName: nameArray[1]
+    //     };
+    //
+    //     this.showBookInfo = (index) => {
+    //         console.log(`Book # ${index} \nTitle: ${this.title}\nAuthor: ${this.author.firstName} ${this.author.lastName}\n---
+    //         `)
+    //     }
+    // }
 
     class Book2 {
         constructor(title, authorName){
@@ -160,9 +161,9 @@
     }
 
     let newBooks = [
-        new Book("The Name of the Wind","Patrick Rothfuss"),
-        new Book("The Name of the Wind","Patrick Rothfuss"),
-        new Book("The Name of the Wind","Patrick Rothfuss")
+        new Book2("The Name of the Wind","Patrick Rothfuss"),
+        new Book2("The Name of the Wind","Patrick Rothfuss"),
+        new Book2("The Name of the Wind","Patrick Rothfuss")
     ];
     newBooks.forEach((book,i) => {
         book.showBookInfo(i + 1)
