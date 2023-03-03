@@ -1,0 +1,13 @@
+
+.column.para {
+    padding:0 300px;
+}
+.row.justify-right {
+    justify-content: end;
+}
+.row.justify-center {
+    width: 100vw;
+}
+.container.grow {
+    background-color: dimgrey;
+}

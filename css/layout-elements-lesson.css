@@ -1,0 +1,7 @@
+header.container {
+    height:80px;
+}
+.container.hero-scene {
+    height: 80vh;
+    background-color:lightpink;
+}
