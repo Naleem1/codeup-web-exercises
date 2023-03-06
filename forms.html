@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Register With Us</title>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
-<div class="email-input">
-    <form method="POST" action="https://request-inspector.glitch.me/">
-        <input id="Email" name="email" type="email" placeholder="Email">
-        <input id="Password" name="password" type="password" placeholder="Password">
+    <div class="email-input">
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <input id="Email" name="email" type="email" placeholder="Email">
+            <input id="Password" name="password" type="password" placeholder="Password">
+        </form>
+    </div>
+    <div class="bio-input">
+            <h3>About Me</h3>
+            <textarea name="Bio"></textarea>
+    </div>
+    <div class="reference">
+        <h3>How did you hear about us?</h3>
+        <input type="radio" name="reference" value="a"> BillBoard
+        <input type="radio" name="reference" value="b"> Internet advertisement
+        <input type="radio" name="reference" value="c"> Radio advertisement
+    </div>
+    <div class="drop-down">
+        <h3>Which web browser are you using?</h3>
+        <select name="browser">
+            <option value="chrome">Chrome</option>
+            <option value="safari">Safari</option>
+            <option value="firefox">Firefox</option>
+            <option value="edge">Edge</option>
+        </select>
+    </div>
+    <div class="submit-button">
         <input type="submit" value="Submit">
-    </form>
-</div>
-<div class="bio-input">
-    <form>
-        <input type="text" placeholder="Bio">
-    </form>
-</div>
-<div class="reference">
-    <h3>How did you hear about us?</h3>
-    <input type="radio" name="reference" value="a"> BillBoard
-    <input type="radio" name="reference" value="b"> Internet advertisement
-    <input type="radio" name="reference" value="c"> Radio advertisement
-</div>
-<div class="drop-down">
-    <h3>Which web browser are you using?</h3>
-    <select name="browser">
-        <option value="chrome">Chrome</option>
-        <option value="safari">Safari</option>
-        <option value="firefox">Firefox</option>
-        <option value="edge">Edge</option>
-    </select>
-</div>
+    </div>
+
+
 </body>
 
 </html>

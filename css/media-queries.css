@@ -1,0 +1,30 @@
+.row {
+    max-width: 900px;
+}
+
+.row .section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.alert-info.hidden-on-desktop{
+    display: none;
+}
+header.row nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.column.main-col {
+    flex: 2 0 0;
+}
+
+@media screen and (max-width: 600px){
+    .row {
+        flex-direction: column;
+    }
+    .alert-info.hidden-on-desktop {
+        display: unset;
+    }
+}
+
