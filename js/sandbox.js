@@ -1,16 +1,16 @@
-// /**
-//  * Convert Address to Object
-//  * Write a function named convertAddressToObject that accepts a string that contains a street number (as a string) and street name separated by a space characters, and returns an object with properties streetNumber and streetName.
-//  *
-//  * Examples
-//  *
-//  * >> convertAddressToObject('8646 Sunny Oaks') ➞ {streetNumber: '8646', streetName: 'Sunny Oaks'}
-//  * >> convertAddressToObject('5408 Villa Nueva') ➞ {streetNumber: '5408', streetName: 'Villa Nueva'}
-//  **/
-//
-// const convertAddressToObject = (address) => {
-//     let streetNumber =
-// }
+/**
+ * Convert Address to Object
+ * Write a function named convertAddressToObject that accepts a string that contains a street number (as a string) and street name separated by a space characters, and returns an object with properties streetNumber and streetName.
+ *
+ * Examples
+ *
+ * >> convertAddressToObject('8646 Sunny Oaks') ➞ {streetNumber: '8646', streetName: 'Sunny Oaks'}
+ * >> convertAddressToObject('5408 Villa Nueva') ➞ {streetNumber: '5408', streetName: 'Villa Nueva'}
+ **/
+
+const convertAddressToObject = (address) => {
+    let streetNumber = address.toString()
+}
 
 const cities = [
     {
@@ -115,9 +115,7 @@ const cities = [
     }
 ]
 
-const isTexas = (cities) => {
-    cities.forEach(city => {
-        console.log(city)
-    })
+for(let i = 0; i < cities.length; i++) {
+    console.log(cities[i].name)
 }
-isTexas(cities)
+
