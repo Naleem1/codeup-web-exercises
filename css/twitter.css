@@ -29,3 +29,7 @@ svg{
     border-radius: 50%;
 
 }
+aside {
+    display: flex;
+    flex: 0 2 0;
+}
