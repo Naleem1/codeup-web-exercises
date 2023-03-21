@@ -1,0 +1,14 @@
+dt {
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+dd {
+    display: none;
+}
+
+.highlight {
+    background-color: yellow;
+}
