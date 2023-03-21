@@ -12,3 +12,7 @@ dd {
 .highlight {
     background-color: yellow;
 }
+
+.bold {
+    text-weight: bold;
+}

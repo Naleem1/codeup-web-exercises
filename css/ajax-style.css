@@ -1,0 +1,15 @@
+h1 {
+    font-family: "Avenir Next Condensed";
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+td {
+    border: 1px solid indianred;
+    padding: 10px;
+    background-color: grey;
+}
+
+th {
+    background-color: indianred;
+}
