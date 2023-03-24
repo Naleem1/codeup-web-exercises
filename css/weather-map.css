@@ -1,0 +1,26 @@
+div {
+    position: relative;
+}
+div.card {
+    margin-top: 50px;
+    border: 1px solid black;
+    width: 100%;
+    height: fit-content;
+    background-color: lightcyan;
+}
+
+header {
+    justify-content: space-around;
+}
+
+header.row p {
+    align-self: end ;
+    justify-items: end;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+

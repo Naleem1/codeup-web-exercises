@@ -35,13 +35,16 @@ const tInfo = async() => {
         return tInfo()
     }
 }
+    const popTools = () => {
+
+    }
     (async() => {
         let tools = await tInfo()
-        console.log(tools.title)
         let toolTable = document.querySelector('#insertProducts')
         let toolProducts = ''
         tools.forEach(tool => {
-            toolProducts += `<tr>
+            // toolProducts =+ toolProducts (this is the same as setting it == to self + string literal)
+            toolProducts = toolProducts + `<tr>
                        <td>${tool.title}</td>
                        <td>${tool.quantity}</td>
                        <td>${tool.price}</td>
@@ -55,6 +58,7 @@ const tInfo = async() => {
 function toggleBtn() {
     let btn = document.querySelector('#btn')
     btn.addEventListener('click',function (){
+
 
     })
 }
