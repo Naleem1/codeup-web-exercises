@@ -4,30 +4,52 @@
     <meta charset="UTF-8">
     <title>Weather</title>
     <script src="js/keys.js"></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet'/>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/resets.css">
     <link rel="stylesheet" href="css/weather-map.css">
 
 </head>
 <body>
-    <div class="page-wrapper">
-        <div class="container">
-            <header class="row">
-                <h1>Weather App</h1>
-                <p id="cCity">current city: #</p>
-            </header>
-            <div id="map"></div>
-            <div class="row">
-                <label>Place
-                    <input type="search" id="search">
-                </label>
+<div class="page-wrapper">
+        <!-- This is my top container -->
+    <div class="container shrink">
+        <div class="row">
+            <div class="column">
+                <div class="row">
+                    <h1> Najee's Bombastic Weather </h1>
+                </div>
+                <div class="row">
+                    <!--                        this is my search bar-->
+                    <form>
+                        <label for="search"></label>
+                        <input type="text" name="searchBar" id="search" placeholder="Type Here">
+                        <button id="searchButton">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <div class="row" id="forecast">
+<!--                    this is my forecast data -->
+                </div>
             </div>
         </div>
     </div>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-    <script src="js/mapbox-geocoder-utils.js"></script>
-    <script src="js/weather-map.js"></script>
+        <!--            Map Data container with the current weather div overlay  -->
+    <div class="container">
+        <div id="map"></div>
+        <div class="row relative">
+            <div class="column">
+                <div class="row" id="weatherDiv"></div>
+            </div>
+<!--               this is my current weather div -->
+            </div>
+        </div>
+    </div>
+</div>
 
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script src="js/weather-map.js"></script>
 </body>
 </html>
