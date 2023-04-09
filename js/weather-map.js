@@ -1,4 +1,5 @@
 'use strict';
+import keys from './keys.js';
 
 (async () => {
     let saLat = 29.424349;
@@ -9,7 +10,7 @@
     let daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
     // this populates the map
-    mapboxgl.accessToken = MAPBOX_API_TOKEN;
+    mapboxgl.accessToken = keys.mapbox;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/dark-v10',
@@ -49,7 +50,7 @@
     }
     // this populates the weather API and pushes the weather into the current day and forecast
     async function getWeather() {
-        let results = await fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${saLat}&lon=${saLon}&appid=${WEATHER_API_KEY}&units=Imperial`);
+        let results = await fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${saLat}&lon=${saLon}&appid=${keys.weathermap}&units=Imperial`);
         let data = await results.json();
         let dailyWeather = data.daily
 
